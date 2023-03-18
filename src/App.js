@@ -1,11 +1,20 @@
 import React from 'react'
 
+import { Footer, Blog, Features, Title, Header } from './containers';
+import { CTA, Navbar } from './components';
+
 const App = () => {
   return (
-    <div>
-      <h1>
-        Web App Time
-      </h1>
+    <div className="App">
+      <div className="gradient_bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Title /> 
+      <Features /> 
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   )
 }
